@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: notification-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python notifi.py
+    plan: free 
